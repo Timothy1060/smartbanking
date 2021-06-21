@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    color: white;
+}
+
+main {
+    margin: 12em 2em 4em 2em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(25,25,99,.9);
+    height: 25vh;
+}
+
+.title {
+    margin: 2em 0;
+}
+
+header .logo {
+    color: #ffd700;
+    text-transform: uppercase;
+}
+
+header p {
+    color: #d3d3d3;
+}
+
+.head {
+    background-color: #e5e5e5;
+    padding: 3em 14em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.head h1 {
+    color: #191963;
+}
+
+h1 span {
+     color: inherit;
+ }
+
+.centered-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.centered-div button {
+    color: #fff;
+    margin: 1em 1em 0 1em;
+    padding: 1em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: rgba(25,25,99,.9);
+    border-radius: 3px;
+}
+
+.centered-div button:hover,
+.centered-div button:focus {
+    opacity: .9;
+    background: rgba(25,25,99,.7);
+}
+
+.main-flex {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-flex section {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 2em;
+}
+
+.main-flex section div {
+    width: 45%;
+    /* border: #b22222 2px solid; */
+    background-color: rgba(25,25,99,.9);
+    color: #fff;
+    border-radius: 3px;
+    /* padding: 1em; */
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.main-flex section div:hover {
+    opacity: .9;
+}
+
+.main-flex section .switch-bkg {
+   /* background-color: rgba(233, 198, 3, 0.9); */
+   background-color: #ffd700;
+}
+
+.main-flex section .switch-bkg:hover {
+    opacity: .7;
+}
+
+.list-flex {
+    display: flex;
+    
+}
+
+.list-flex li {
+    margin:  .2em;
+}
+
+footer {
+    background-color: #e5e5e5;
+    padding: 3em 0;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+footer a {
+    color: #191963;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+@media (max-width:760px) {
+
+
+main {
+    margin: 11em 0em 2em 0em;
+}
+    .head {
+    padding: 2.5em 6em;
+    border-radius: 0;
+    width: auto;
+}
+
+.main-flex section div {
+    width: 100%;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 0;
+    margin: .5em 0;
+}
+
+.list-flex {
+    display: none;
+    
+}
+
+.main-flex section {
+    display: flex;
+    flex-direction: column;
+    margin: 0em 2em;
+}
+
+.main-flex section .switch-bkg {
+background-color: rgba(25,25,99,.9);
+}
+
+.main-flex section .color {
+    background-color: #ffd700;
+}
+
+
+}
+
+
+@media (max-width:390px) {
+        .head {
+    padding: 2.5em 2em;
+    border-radius: 0;
+    width: auto;
+}
+
+}
